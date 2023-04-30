@@ -10,6 +10,13 @@ public class MyArrayListQueue extends MyArrayList{
         list.add(element);
     }
 
+    public Object dequeue() {
+        if (isEmpty()) {
+            throw new NoSuchElementException();
+        }
+        return list.remove(0);
+    }
+
     public boolean isEmpty() {
         if (list.size() == 0) {
             return true;
