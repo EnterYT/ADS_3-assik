@@ -1,2 +1,2 @@
-public class MyArrayListQueue {
+public class MyArrayListQueue extends MyArrayList{
 }

@@ -1,11 +1,7 @@
 <component name="libraryTable">
   <library name="ADS_2">
-    <CLASSES>
-      <root url="file://$PROJECT_DIR$/../ADS_2" />
-    </CLASSES>
+    <CLASSES />
     <JAVADOC />
-    <SOURCES>
-      <root url="file://$PROJECT_DIR$/../ADS_2/src" />
-    </SOURCES>
+    <SOURCES />
   </library>
 </component>
