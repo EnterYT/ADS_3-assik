@@ -8,7 +8,7 @@ public class MyArrayListStack extends MyArrayList {
 
     /**
      * push() - method that adds an element to the top of the stack.
-     * @param element
+     * @param element - element that you need to add.
      */
     public void push(Object element) {
         list.add(element, 0);
@@ -16,7 +16,7 @@ public class MyArrayListStack extends MyArrayList {
 
     /**
      * pop() - method that removes and returns the top element of the stack.
-     * @return
+     * @return the top element of the stack.
      */
     public Object pop() {
         if (isEmpty()) {
@@ -26,8 +26,8 @@ public class MyArrayListStack extends MyArrayList {
     }
 
     /**
-     * peek() - method that returns the top element of the stack without removing.
-     * @return
+     * peek() - method that returns the top element of the stack without removing it.
+     * @return the top element of the stack without removing it.
      */
     public Object peek() {
         if (isEmpty()) {
@@ -38,7 +38,7 @@ public class MyArrayListStack extends MyArrayList {
 
     /**
      * isEmpty() - method that returns true if the stack is empty or false if it is not.
-     * @return
+     * @return true if the stack is empty or false if it is not.
      */
     public boolean isEmpty() {
         return list.size() == 0;
@@ -46,7 +46,7 @@ public class MyArrayListStack extends MyArrayList {
 
     /**
      * size() - method that returns the number of elements in the stack.
-     * @return
+     * @return the number of elements in the stack.
      */
     public int size() {
         return list.size();

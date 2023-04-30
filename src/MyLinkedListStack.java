@@ -1,5 +1,4 @@
 import java.util.EmptyStackException;
-
 public class MyLinkedListStack<T> extends MyLinkedList {
     private MyLinkedList<T> list;
 
@@ -9,7 +8,7 @@ public class MyLinkedListStack<T> extends MyLinkedList {
 
     /**
      * push() - method that adds an element to the top of the stack.
-     * @param element
+     * @param element - element that you need to add.
      */
     public void push(T element) {
         list.add(element, 0);
@@ -17,7 +16,7 @@ public class MyLinkedListStack<T> extends MyLinkedList {
 
     /**
      * pop() - method that removes and returns the top element of the stack.
-     * @return
+     * @return the top element of the stack
      */
     public T pop() {
         if (isEmpty()) {
@@ -27,8 +26,8 @@ public class MyLinkedListStack<T> extends MyLinkedList {
     }
 
     /**
-     * peek() - method that returns the top element of the stack without removing.
-     * @return
+     * peek() - method that returns the top element of the stack without removing it.
+     * @return the top element of the stack without removing it.
      */
     public T peek() {
         if (isEmpty()) {
@@ -39,7 +38,7 @@ public class MyLinkedListStack<T> extends MyLinkedList {
 
     /**
      * isEmpty() - method that returns true if the stack is empty or false if it is not.
-     * @return
+     * @return true if the stack is empty or false if it is not.
      */
     public boolean isEmpty() {
         return list.size() == 0;
@@ -47,7 +46,7 @@ public class MyLinkedListStack<T> extends MyLinkedList {
 
     /**
      * size() - method that returns the number of elements in the stack.
-     * @return
+     * @return the number of elements in the stack.
      */
     public int size() {
         return list.size();
