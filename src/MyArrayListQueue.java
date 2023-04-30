@@ -18,4 +18,8 @@ public class MyArrayListQueue extends MyArrayList{
             return false;
         }
     }
+
+    public int size() {
+        return list.size();
+    }
 }
