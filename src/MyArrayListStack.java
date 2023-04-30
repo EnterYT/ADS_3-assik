@@ -7,7 +7,7 @@ public class MyArrayListStack extends MyArrayList {
     }
 
     public void push(Object element) {
-        list.add(element);
+        list.add(element, 0);
     }
 
     public Object pop() {

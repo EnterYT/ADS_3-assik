@@ -62,7 +62,7 @@ public class MyArrayList<T> implements MyList {
      */
     @Override
     public void add(Object item, int index) {
-        if (index < 0 || index >= size) {
+        if (index < 0 || index > size) {
             throw new IndexOutOfBoundsException();
         }
         if (size == arr.length) {
