@@ -9,4 +9,15 @@ public class MyLinkedListQueue<T> extends MyLinkedList {
     public void enqueue(T element) {
         list.add(element);
     }
+
+    public T dequeue() {
+        if (isEmpty()) {
+            throw new NoSuchElementException();
+        }
+        return (T) list.remove(0);
+    }
+
+    public boolean isEmpty() {
+        return list.size() == 0;
+    }
 }
