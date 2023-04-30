@@ -6,5 +6,7 @@ public class Main {
 //        System.out.println(myArrayListStack.peek());
 //        System.out.println(myArrayListStack.size());
 //        System.out.println(myArrayListStack.isEmpty());
+
+
     }
 }

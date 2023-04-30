@@ -1,9 +1,13 @@
 import java.util.EmptyStackException;
 public class MyArrayListStack extends MyArrayList {
-    MyArrayList list = new MyArrayList();
+    private MyArrayList list;
+
+    MyArrayListStack() {
+        list = new MyArrayList<>();
+    }
 
     public void push(Object element) {
-        list.add(element);
+        list.add(element, 0);
     }
 
     public Object pop() {
