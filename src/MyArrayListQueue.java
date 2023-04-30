@@ -1,12 +1,21 @@
 import java.util.NoSuchElementException;
-public class MyArrayListQueue<T> extends MyArrayList{
-    private MyArrayList<T> list;
+public class MyArrayListQueue extends MyArrayList{
+    private MyArrayList list;
 
     MyArrayListQueue() {
         list = new MyArrayList<>();
     }
 
-    public void enqueue(T element) {
+    public void enqueue(Object element) {
         list.add(element);
+    }
+
+    public boolean isEmpty() {
+        if (list.size() == 0) {
+            return true;
+        }
+        else {
+            return false;
+        }
     }
 }
