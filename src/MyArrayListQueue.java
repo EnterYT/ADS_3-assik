@@ -17,6 +17,13 @@ public class MyArrayListQueue extends MyArrayList{
         return list.remove(0);
     }
 
+    public Object peek() {
+        if (isEmpty()) {
+            throw new NoSuchElementException();
+        }
+        return list.get(0);
+    }
+
     public boolean isEmpty() {
         if (list.size() == 0) {
             return true;

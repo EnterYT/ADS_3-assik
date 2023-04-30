@@ -7,18 +7,18 @@ public class MyArrayListStack extends MyArrayList {
     }
 
     public void push(Object element) {
-        list.add(element, 0);
+        list.add(element);
     }
 
     public Object pop() {
-        if (list.size() == 0) {
+        if (isEmpty()) {
             throw new EmptyStackException();
         }
         return list.remove(0);
     }
 
     public Object peek() {
-        if (list.size() == 0) {
+        if (isEmpty()) {
             throw new EmptyStackException();
         }
         return list.get(0);
