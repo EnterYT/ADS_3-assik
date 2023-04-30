@@ -14,6 +14,22 @@ public class MyArrayListStack extends MyArrayList {
         if (list.size() == 0) {
             throw new EmptyStackException();
         }
-        return list.remove(list.size() - 1);
+        return list.remove(0);
+    }
+
+    public Object peek() {
+        if (list.size() == 0) {
+            throw new EmptyStackException();
+        }
+        return list.get(0);
+    }
+
+    public boolean isEmpty() {
+        if (list.size() == 0) {
+            return true;
+        }
+        else {
+            return false;
+        }
     }
 }
