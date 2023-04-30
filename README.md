@@ -88,7 +88,7 @@
 
     public T peek() {
         if (isEmpty()) {
-            throw new EmptyStackException();
+            throw new NoSuchElementException();
         }
         return (T) list.get(0);
     }
