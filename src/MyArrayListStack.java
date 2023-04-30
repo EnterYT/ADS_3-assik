@@ -1,10 +1,6 @@
 import java.util.EmptyStackException;
 public class MyArrayListStack extends MyArrayList {
-    private MyArrayList list;
-
-    public MyArrayListStack() {
-        list = new MyArrayList<>();
-    }
+    MyArrayList list = new MyArrayList();
 
     public void push(Object element) {
         list.add(element);
