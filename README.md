@@ -63,8 +63,8 @@
 
 **Solution**: 
 
-    public int size() {
-        return list.size();
+    public void enqueue(T element) {
+        list.add(element);
     }
     
 # :radioactive: dequeue() function
@@ -73,8 +73,11 @@
 
 **Solution**: 
 
-    public int size() {
-        return list.size();
+    public T dequeue() {
+        if (isEmpty()) {
+            throw new NoSuchElementException();
+        }
+        return (T) list.remove(0);
     }
     
 # :radioactive: peek() function
